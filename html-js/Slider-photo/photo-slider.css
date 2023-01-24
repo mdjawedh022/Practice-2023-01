@@ -1,0 +1,38 @@
+body{
+    background: linear-gradient(0.25turn, #cfdbe0, #dcefce, #dbc9b5);
+}
+#parent-div{
+  display: flex;
+  width: 80%;
+  margin: 5% auto;
+  /* border:1px solid gray;    */
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+#main-div {
+  /* border:1px solid gray; */
+  margin: 40px auto;
+  border-radius: 10px;
+  width: 70%;
+  height: 90%;
+}
+.multi-phot0 {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(42, 193, 18, 0.25) 0px 54px 55px,
+    rgba(11, 50, 189, 0.12) 0px -12px 30px, rgba(132, 11, 11, 0.12) 0px 4px 6px,
+    rgba(139, 10, 10, 0.17) 0px 12px 13px, rgba(214, 18, 18, 0.09) 0px -3px 5px;
+}
+.image {
+  box-shadow: rgba(42, 193, 18, 0.25) 0px 54px 55px,
+    rgba(11, 50, 189, 0.12) 0px -12px 30px, rgba(132, 11, 11, 0.12) 0px 4px 6px,
+    rgba(139, 10, 10, 0.17) 0px 12px 13px, rgba(214, 18, 18, 0.09) 0px -3px 5px;
+  width: 100%;
+  /* height: 100%; */
+  border-radius: 10px;
+}
+.some-photo {
+  display: grid;
+}
