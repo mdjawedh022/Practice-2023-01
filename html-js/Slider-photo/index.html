@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photo-slider</title>
+    <link rel="stylesheet" href="./photo-slider.css">
+</head>
+
+<body>
+    <div id="main-div">
+        <img name="slider" src="" alt="">
+   <div class="some-photo">
+    <img  class="multi-phot0" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAExVoaGWRq1h0N9QFgU0mYHJTvfII73xRPw&usqp=CAU" alt="jawed"/>
+    <img  class="multi-phot0" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaqfK5liCsVmN9hHtbumxduUyQcXDiktGAng&usqp=CAU" alt="jawed"/>
+    <img  class="multi-phot0" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROJjZoW0j3dL4iJ4S-I69QDFw3Wye4pJ3hqw&usqp=CAU" alt="jawed"/>
+    <img  class="multi-phot0" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGhTxfSakr3IPefkPs3MeQXDoKo0BRKZG4Ww&usqp=CAU" alt="jawed"/>
+   </div>
+    </div>
+</body>
+</html>
+<script>
+   let i=0;
+   let img=[];
+   let time=2000;
+   img[0]='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGhTxfSakr3IPefkPs3MeQXDoKo0BRKZG4Ww&usqp=CAU'
+   img[1]='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaqfK5liCsVmN9hHtbumxduUyQcXDiktGAng&usqp=CAU'
+   img[2]='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROJjZoW0j3dL4iJ4S-I69QDFw3Wye4pJ3hqw&usqp=CAU'
+   img[4]='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGhTxfSakr3IPefkPs3MeQXDoKo0BRKZG4Ww&usqp=CAU'
+
+   function sliderImage(){
+    document.slider.src=img[i];
+    if(i<img.length-1){
+        i++;
+    } else{
+        i=0;
+    }
+    setTimeout("sliderImage()",time);
+   }
+   window.onload=sliderImage;
+</script>
